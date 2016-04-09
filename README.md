@@ -1,6 +1,6 @@
 #Android Projects
 
-QuickNotes apk URL : https://github.com/Aravind-A/Spider-AppDev-Laterals/tree/master/QuickNotes/app/app-release.apk
+QuickNotes apk URL : https://github.com/Aravind-A/AppDev-Projects/tree/master/QuickNotes/app/app-release.apk
 
 About QuickNotes :
 	It is a handy note - saving app where you can create notes for your ideas and important things to do, for your future reference.
