@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 /**
  * Created by aravind on 29/3/16.
@@ -42,15 +43,21 @@ public class DialogNewNote extends DialogFragment {
         btnOK.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Note newNote = new Note();
-                newNote.setTitle(editTitle.getText().toString());
-                newNote.setDescription(editDescription.getText().toString());
-                newNote.setIdea(checkBoxIdea.isChecked());
-                newNote.setImportant(checkBoxImportant.isChecked());
+                if(editTitle.getText().toString().trim().length() == 0)
+                    Toast.makeText(getActivity().getApplicationContext(),"Title not set !",Toast.LENGTH_SHORT).show();
+                else if(editDescription.getText().toString().trim().length() == 0)
+                    Toast.makeText(getActivity().getApplicationContext(),"Description is empty !",Toast.LENGTH_SHORT).show();
+                else {
+                    Note newNote = new Note();
+                    newNote.setTitle(editTitle.getText().toString());
+                    newNote.setDescription(editDescription.getText().toString());
+                    newNote.setIdea(checkBoxIdea.isChecked());
+                    newNote.setImportant(checkBoxImportant.isChecked());
 
-                MainActivity callingActivity = (MainActivity) getActivity();
-                callingActivity.createNewNote(newNote);
-                dismiss();
+                    MainActivity callingActivity = (MainActivity) getActivity();
+                    callingActivity.createNewNote(newNote);
+                    dismiss();
+                }
             }
         });
 

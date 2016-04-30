@@ -83,9 +83,10 @@ public class MainActivity extends AppCompatActivity {
         mFadeIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
 
         if(mAnimOption == SettingsActivity.FAST)
-            mAnimFlash.setDuration(100);
+            mAnimFlash.setDuration(750);
         else if(mAnimOption == SettingsActivity.SLOW)
             mAnimFlash.setDuration(1000);
+
         mNoteAdapter.notifyDataSetChanged();
     }
 
