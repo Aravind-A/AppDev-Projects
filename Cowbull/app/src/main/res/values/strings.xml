@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cowbull</string>
+    <string name="action_settings">Settings</string>
+    <string name="rules">Guess the word based on the number of alphabets,cows and bulls.\n\nA cow indicates that an alphabet of the guessed word is present at some other position in the actual word.\n\nA bull indicates that an alphabet of the guessed word is present at the same position in the actual word.\n\nTherefore, to win, get number of bulls equal to the length of the actual word.\n\nImprove your best score with a lesser number of attempts</string>
+</resources>
