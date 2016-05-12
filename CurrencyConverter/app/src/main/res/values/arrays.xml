@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="from_array">
+        <item>Australian Dollar - AUD</item>
+        <item>British Pound	- GBP</item>
+        <item>Euro	- EUR</item>
+        <item>Japanese Yen - JPY</item>
+        <item>Swiss Franc - CHF</item>
+        <item>US Dollar	- USD</item>
+        <item>Canadian Dollar - CAD</item>
+        <item>Indian Rupee - INR</item>
+        <item>Singapore Dollar - SGD</item>
+    </string-array>
+</resources>
