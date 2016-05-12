@@ -12,3 +12,7 @@
 ###Audio Recorder
 
 	A standard audio recorder app to record and save audios. They can then be renamed, shared or deleted.
+
+###Currency Converter 
+		
+	Know the value of your budget in different currencies using live exchange rates.
